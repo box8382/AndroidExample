@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "57067924225",
+    "firebase_url": "https://ex83fdb-17a15.firebaseio.com",
+    "project_id": "ex83fdb-17a15",
+    "storage_bucket": "ex83fdb-17a15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57067924225:android:4b88a596556cd68b294900",
+        "android_client_info": {
+          "package_name": "com.pmkproject.ex83firebasedbtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57067924225-3j07talqmtrej99ikn86ltg411e7h5kj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDct9AtSiHZa1uaDAAjIUwW2CyoZPY5gjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57067924225-3j07talqmtrej99ikn86ltg411e7h5kj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

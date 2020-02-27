@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/g1">
+        <item android:id="@+id/menu_aa"
+            android:title="aa"
+            android:icon="@android:drawable/ic_input_delete"/>
+        <item android:id="@+id/menu_bb"
+            android:title="bb"
+            android:icon="@android:drawable/ic_input_get"/>
+    </group>
+
+    <group android:id="@+id/g2" android:orderInCategory="2">
+        <item android:id="@+id/menu_cc"
+            android:title="cc"
+            android:icon="@android:drawable/ic_input_delete"/>
+        <item android:id="@+id/menu_dd"
+            android:title="dd"
+            android:icon="@android:drawable/ic_input_get"/>
+    </group>
+
+    <group android:id="@+id/g3" android:orderInCategory="1">
+        <item android:id="@+id/menu_ee"
+            android:title="ee"
+            android:icon="@android:drawable/ic_input_delete"/>
+        <item android:id="@+id/menu_ff"
+            android:title="ff"
+            android:icon="@android:drawable/ic_input_get"/>
+    </group>
+</menu>

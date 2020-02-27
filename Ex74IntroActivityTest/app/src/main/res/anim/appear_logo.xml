@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/overshoot_interpolator">
+
+    <!--android:fromXScale="0.0" from 어디서부터 X 좌표 (0.0 ~ 1.0)
+        android:toXScale="1.0"   to 어디까지 X좌표 (0.0 ~ 1.0)
+        android:fromYScale="0.0"
+        android:toYScale="1.0"
+
+        android:pivotX="50%"     50%는 가운데 어디서부터 만들건지를 결정함
+        android:pivotY="50%"
+
+        android:duration="5000"  몇초안에 위의 작업을 실행할건지 (즉 5초안에 점점커져서 완성되기까지의 시간이 5초)
+        android:offsetStart="5000" 몇초뒤에 위의 작업을 할지 결정
+
+        scale 굵기에 관한 애니메이션
+        alpha 투명도에 관한 애니메이션
+        translate 이동에 관한 애니메이션
+        rotate 회전에 관한 애니메이션 -->
+
+    <scale
+        android:fromXScale="0.0"
+        android:toXScale="1.0"
+        android:fromYScale="0.0"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="5000"/>
+
+    <alpha android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="5000"/>
+
+</set>

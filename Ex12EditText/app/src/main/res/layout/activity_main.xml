@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    -지정이 없으면 엔터를 가진 키패드가 올라옴.(줄바꿈이 됨)- height값이 wrap이면 뷰가 커지고 수치값이면 안에 내용물이 안보이게 됨.-->
+<!--    -"date": 숫자 키패드(/, -, . 3개의 특수문자 키) - 줄바꿈 안됨.(포커스가 다음으로 이동됨)-->
+<!--    -"datetime": 숫자 키패드(/, -, . , :(롱클릭) 4개의 특수문자 키) - 줄바꿈 안됨.-->
+<!--    -"number":숫자 키패드 - 줄바꿈 안됨.-->
+<!--    -"numberSigned": 음수부호 입력 가능 - 줄바꿈 안됨.-->
+<!--    -"phone":다이얼 키패드 - 줄바꿈 안됨.-->
+<!--    -"text" : -줄바꿈 안됨-->
+<!--    -"textCapCharacters" : 모두 대문자 -줄바꿈 안됨-->
+<!--    -"textCapWords" : 단어의 첫글자에서 대문자 다음부터 자동 소문자(띄어쓰기 후 다시 대문자)-->
+<!--    -"textCapSentences " : 문자의 첫글자 대문자.-->
+<!--    -"textMultiLine" : 여러줄 입력 -엔터가 줄바꿈으로 됨.-->
+<!--    -"textPassword" : 입력된 글자가 가려짐 : 영어만 입력가능함-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="show"
+            android:onClick="clickShow"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hide"
+            android:onClick="clickHide"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="toggle"
+            android:onClick="clickToggle"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="input data"
+        android:inputType="phone"/>
+
+
+    <!-- multiLine 의 뷰 높이 관련 -->
+    <!-- 라인 수 관련(뷰 높이사이즈 관련) 속성-->
+    <!-- 1. Lines 속성 : 처음 화면에 보이는 EditText 의 높이가 3줄 높이로 됨. 단, 3줄이상 입력은 가능함. 대신 높이가 더이상 커지지 않음-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+
+    <!--2. maxLines : 처음 화면에 보일때는 한줄로 보이지만 줄바꿈해보면 3줄 까지 높이가 늘어나고 그 이상은 스크롤 됨.-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="input multiLine : maxLines 3줄"
+        android:maxLines="3"
+        android:gravity="top"/>
+
+    <!--EditText 에 이미지 삽입 가능 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:drawableRight="@drawable/b"/>
+
+    <!--EditText 의 커서 안보이기-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="no cursor"
+        android:cursorVisible="false"/>
+
+    <!--width 값을 글자수로 지정가능-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"/>
+
+    <!--바꾸면 언더라인이 없어짐-->
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#008800"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:gravity="top"/>
+
+    <!--EditText 의 포커스 자동 이동-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText android:id="@+id/et01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="number"
+            android:maxLength="3"
+            android:gravity="center"/>
+
+        <EditText android:id="@+id/et02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:inputType="number"
+            android:maxLength="4"
+            android:gravity="center"/>
+
+        <EditText android:id="@+id/et03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:inputType="number"
+            android:maxLength="4"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

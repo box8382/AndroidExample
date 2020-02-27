@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#6799FF"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button android:id="@+id/regame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시하기"
+            android:gravity="center"
+            android:background="#8BBCFF"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="숫자 야구"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#B2CCFF"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <Button android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="숫자초기화"
+            android:gravity="center"
+            android:background="#8BBCFF"
+            android:layout_alignParentRight="true"
+            android:onClick="clickreset"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="입 력 된  숫 자"
+        android:background="#3162C7"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:background="#5586EB">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/tv01"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#006579"
+                android:background="#79AAFF"
+                android:gravity="center"/>
+
+            <TextView android:id="@+id/tv02"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#006579"
+                android:background="#79AAFF"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView android:id="@+id/tv03"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#006579"
+                android:background="#79AAFF"
+                android:gravity="center"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="게 임  현 황 판"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="#9354ED"/>
+
+    <ScrollView android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="#B778FF">
+
+        <TextView android:id="@+id/tv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+    </ScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:shrinkColumns="*">
+        <TableRow>
+            <Button android:id="@+id/btn00" android:text="0" android:textSize="20sp"/>
+            <Button android:id="@+id/btn01" android:text="1" android:textSize="20sp"/>
+            <Button android:id="@+id/btn02" android:text="2" android:textSize="20sp"/>
+            <Button android:id="@+id/btn03" android:text="3" android:textSize="20sp"/>
+            <Button android:id="@+id/btn04" android:text="4" android:textSize="20sp"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btn05" android:text="5" android:textSize="20sp"/>
+            <Button android:id="@+id/btn06" android:text="6" android:textSize="20sp"/>
+            <Button android:id="@+id/btn07" android:text="7" android:textSize="20sp"/>
+            <Button android:id="@+id/btn08" android:text="8" android:textSize="20sp"/>
+            <Button android:id="@+id/btn09" android:text="9" android:textSize="20sp"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

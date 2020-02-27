@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sounds">
+        <item>톡톡</item>
+        <item>택택</item>
+        <item>킥킥</item>
+        <item>딕딕</item>
+        <item>림림</item>
+        <item>유유</item>
+    </string-array>
+
+    <string-array name="favors">
+        <item>여행</item>
+        <item>tv시청</item>
+        <item>독서</item>
+        <item>영화감상</item>
+        <item>게임</item>
+    </string-array>
+</resources>

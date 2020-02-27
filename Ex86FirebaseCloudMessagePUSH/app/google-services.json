@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "954255155083",
+    "firebase_url": "https://ex86firebasecloudmessagepush.firebaseio.com",
+    "project_id": "ex86firebasecloudmessagepush",
+    "storage_bucket": "ex86firebasecloudmessagepush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954255155083:android:dcfa4a12809807193c598e",
+        "android_client_info": {
+          "package_name": "com.pmkproject.ex86firebasecloudmessagepush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954255155083-hhqh7p4tl9sn8do81k4gmnfn5lcjikc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaSMIi3sD61q7SFtHWBuqE64ZYMX3mo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954255155083-hhqh7p4tl9sn8do81k4gmnfn5lcjikc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

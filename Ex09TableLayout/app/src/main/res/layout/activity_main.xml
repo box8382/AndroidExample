@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!--TableLayout 은 기본적으로 LinearLayout 을 상속받았기때문에 View 들이 겹쳐질수 없음-->
+
+    <!--TableLayout 안에서 뷰들의 사이즈 wrap_content 가 됨 -->
+    <!--화면이 남아서 늘려주는 속성 (stretchColumns)-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:stretchColumns="*">
+
+    <!--width, height 이 없어도 wrap_content 가 됨-->
+        <TableRow>
+            <Button android:text="1"/>
+            <Button/>
+            <Button/>
+        </TableRow>
+
+        <TableRow>
+            <Button/>
+            <Button android:layout_column="2"/>
+            <!--순서를 바꿔서 지정하는 것은 불가-->
+            <!--<Button android:layout_column="1"/>-->
+        </TableRow>
+
+        <TableRow>
+            <Button/>
+            <Button android:layout_span="2"/>
+            <!--셀병합 (칸 합치기)-->
+        </TableRow>
+
+    </TableLayout>
+
+    <!--테이블 안에 칸이 너무 많으면 화면밖으로 벗어남 why? 기본 뷰들의 사이즈가 wrap_content 가 되므로..-->
+    <!--위의 stretchColumns 의 반대속성 사용-->
+    <!--화면이 부족하면 뷰들의 사이즈를 축소시켜주는 속성 (shrinkColumns)-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*">
+        <TableRow>
+            <Button android:text="1"/>
+            <Button android:text="2"/>
+            <Button android:text="3"/>
+            <Button android:text="4"/>
+            <Button android:text="5"/>
+        </TableRow>
+
+        <TableRow>
+            <Button/>
+            <Button/>
+        </TableRow>
+    </TableLayout>
+
+    <!--셀 숨기기-->
+    <TableLayout
+        android:collapseColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TableRow>
+            <Button/>
+            <Button android:layout_width="150dp"/>
+        </TableRow>
+
+        <TableRow>
+            <Button/>
+            <Button android:layout_height="80dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

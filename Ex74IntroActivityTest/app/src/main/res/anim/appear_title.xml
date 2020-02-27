@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/bounce_interpolator">
+
+<!--    android:interpolator="@android:anim/bounce_interpolator" 특수효과? 같은느낌 공튀기는것처럼 나오게끔함
+
+        android:fromXDelta="0"      X축은 안움직인다는 말뜻임(움직여도 아래의 원리와 동일)
+        android:toXDelta="0"
+        android:fromYDelta="-30%p"  Y축 지점에서 -30%p면 화면 기준이고 화면밖 30%나간지점 에서
+        android:toYDelta="0%p"      원래의 지점 즉 그림이 있어야할 원래지점 0%p까지 내려온다는뜻임
+        android:fromYDelta="-30%p" %p는 화면기준이라는 말이고  %는 적용할 View의 기준이된다
+
+        translate 이동에 관한 애니메이션을 사용함 -->
+
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="0"
+        android:fromYDelta="-30%p"
+        android:toYDelta="0%p"
+        android:duration="4000"/>
+
+</set>

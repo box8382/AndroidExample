@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn01"/>
+
+
+    <Button android:id="@+id/btn02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn02"
+        android:layout_alignParentRight="true"/>
+
+    <Button android:id="@+id/btn03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn03"
+        android:layout_alignParentBottom="true"/>
+
+    <Button android:id="@+id/btn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn04"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button android:id="@+id/btn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn05"
+        android:layout_centerInParent="true"/>
+
+    <Button android:id="@+id/btn06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn06"
+        android:layout_centerHorizontal="true"/>
+
+    <Button android:id="@+id/btn07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn07"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <Button android:id="@+id/btn08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn08"
+        android:layout_below="@id/btn01"/>
+
+    <Button android:id="@+id/btn09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn09"
+        android:layout_toRightOf="@id/btn03"
+        android:layout_alignParentBottom="true"/>
+
+    <Button android:id="@+id/btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        android:layout_above="@id/btn05"
+        android:layout_alignLeft="@id/btn05"/>
+
+    <!--    겹처서 배치할 때 특이점-->
+    <!--    나중에 만든 View 가 기존에 View 를 덮어야 하지만.. Button 은 항상 최우선 됨-->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_centerVertical="true">
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerVertical="true"/>
+
+    <!--    이미지뷰가 나중에 있으면.. 위에 보여짐-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"/>
+
+
+
+
+
+</RelativeLayout>

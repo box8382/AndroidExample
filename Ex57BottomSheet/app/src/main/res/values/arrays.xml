@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="datas">
+        <item>안</item>
+        <item>녕</item>
+        <item>하</item>
+        <item>세</item>
+        <item>요</item>
+        <item>ㅗ</item>
+    </string-array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="datas">
+        <item>서울특별시</item>
+        <item>부산광역시</item>
+        <item>인청광역시</item>
+        <item>대전광역시</item>
+        <item>울특별</item>
+        <item>산광역</item>
+        <item>청광역</item>
+        <item>전광역</item>
+        <item>서울특별시</item>
+        <item>부산광역시</item>
+        <item>인청광역시</item>
+        <item>대전광역시</item>
+        <item>울특별</item>
+        <item>산광역</item>
+        <item>청광역</item>
+        <item>전광역</item>
+    </string-array>
+</resources>

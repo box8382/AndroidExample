@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--TableLayout 의 미흡한 점을 개선하기 위해 만든 레이아웃, 뷰들이 겹쳐지며, RowSpan, ColSpan 모두 가능함.-->
+    <!--TableRow 처럼 중첩구조가 아님-->
+
+    <!--orientation 을 통해 칸개수 또는 줄개수를 지정할 수 있음-->
+
+    <!--orientation="horizontal"이고 columnCount="3"이면 이 레이아웃의 뷰들은 최대 3개까지만 추가되고 자동 줄바꿈이 되어 배치됨-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <Button android:text="1"/>
+        <Button android:text="2"/>
+        <Button android:text="3"/>
+        <Button android:text="4"/>
+        <Button android:text="5"/>
+        <!--셀(뷰)의 사이즈를 조정하여도 다른 셀의 크기에 영향을 주지 않음-->
+        <Button android:text="6" android:layout_width="200dp"/>
+
+        <!--칸위치(column)를 지정할 때 순서가 뒤바뀌어도 적용됨-->
+        <Button android:text="7" android:layout_column="1"/>
+        <Button android:text="8" android:layout_column="0"/>
+
+        <!--줄위치(row)를 지정하여 배치하는 것도 기능-->
+        <Button android:text="9" android:layout_row="3" android:layout_column="2"/>
+
+        <!--겹쳐질 수도 있음(9번과 같은 위치에 배치 했음)-->
+        <Button android:text="10" android:layout_row="3" android:layout_column="2"/>
+
+        <!--셀 병합(colSpan) 은 되지만 기본적으로 공간만 차지하고 셀(뷰)의 크기는 변경되지 않음 layout_gravity 를 통해 사이즈 지정-->
+        <Button android:text="11" android:layout_columnSpan="2" android:layout_gravity="fill_horizontal"/>
+
+        <!--줄 병합(rowSpan) 은 되지만 기본적으로 공간만 차지하고 셀(뷰)의 크기는 변경되지 않음 layout_gravity 를 통해 사이즈 지정-->
+        <Button android:text="12" android:layout_rowSpan="2" android:layout_gravity="fill_vertical"/>
+
+        <Button android:layout_column="2"/>
+
+
+    </GridLayout>
+
+    <!-- TableLayout 처럼 stretchColumn 이 없기에 균등 분할이 어려움-->
+
+</RelativeLayout>
